@@ -1,1 +1,1 @@
-# top-10-movies-template
+# top-10-template
