@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 10 Lists</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap">
   <style>
     body {
@@ -15,60 +16,43 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
-      overflow: hidden;
     }
 
-    .template {
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.9);
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: relative;
+    .container {
+      text-align: center;
     }
 
     h1 {
       color: #ffd700;
-      text-align: center;
       font-size: 36px;
-      margin: 20px 0; /* Added top margin */
+      margin-bottom: 20px;
     }
 
-    .movie-list {
-      margin-top: 20px;
+    .year-container {
+      margin-top: 30px;
     }
 
-    .movie-item {
+    .year-heading {
+      color: #3498db; /* Blue color for year headings */
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .list-link {
+      text-decoration: none;
+      color: #3498db; /* Blue color for links */
       font-size: 20px;
-      margin-bottom: 25px; /* Increased margin */
+      margin: 10px;
+      padding: 15px 30px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-block; /* Ensures padding is respected */
     }
 
-    .highlight {
-      color: #ffd700; /* Gold color for highlighting */
-      font-weight: bold;
-    }
-
-    .separator {
-      width: 100%;
-      height: 2px;
-      background-color: #ffd700;
-      margin: 20px 0;
-    }
-
-    #hash {
-      color: #3498db; /* Blue color for hashtags */
-      font-weight: 700;
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .doodle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: -1;
+    .list-link:hover {
+      background-color: #3498db;
+      color: #1a1a1a; /* Dark background color for text on hover */
     }
 
     @media only screen and (max-width: 600px) {
@@ -76,38 +60,30 @@
         font-size: 28px;
       }
 
-      .movie-item {
-        font-size: 18px;
+      .list-link {
+        font-size: 16px;
+        margin: 10px;
+        padding: 12px 20px;
       }
 
-      .separator {
-        margin: 15px 0;
-      }
-
-      .hashtag {
-        margin-top: 15px;
+      .year-heading {
+        font-size: 24px;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="template">
-    <img src="./doodles-for-movies.png" alt="Doodle" class="doodle">
-    <h1 style="margin-top: 50px; margin-bottom: 30px;">🎬 Top <span class="highlight">10</span> Movies of 2023</h1>
+  <div class="container">
+    <h1>Explore Top 10 Lists</h1>
 
-    <div class="movie-list">
-      <div class="movie-item"><span id="hash">#1</span> Mission Impossible Dead Reckoning</div>
-      <div class="movie-item"><span id="hash">#2</span> Spiderman Across The Spiderverse</div>
-      <div class="movie-item"><span id="hash">#3</span> Elemental</div>
-      <div class="movie-item"><span id="hash">#4</span> Leave The World Behind</div>
-      <div class="movie-item"><span id="hash">#5</span> Guardians Of The Galaxy Vol3</div>
-      <div class="movie-item"><span id="hash">#6</span> Barbie</div>
-      <div class="movie-item"><span id="hash">#7</span> Extraction 2</div>
-      <div class="movie-item"><span id="hash">#8</span> John Wick Chapter 4</div>
-      <div class="movie-item"><span id="hash">#9</span> Scream 6</div>
-      <div class="movie-item"><span id="hash">#10</span> M3gan</div>
+    <!-- Add new years with corresponding links -->
+    <div class="year-container">
+      <h2 class="year-heading">Year - 2023</h2>
+      <a class="list-link" href="./movie-2023.html">Top 10 Movies</a>
+      <a class="list-link" href="./tv-2023.html">Top 10 TV Shows</a>
     </div>
+
   </div>
 
 </body>
