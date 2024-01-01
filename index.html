@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap">
+  <style>
+    body {
+      font-family: 'Cinzel', serif;
+      margin: 0;
+      padding: 0;
+      background: #1a1a1a; /* Dark background color */
+      color: #ffd700; /* Gold color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .template {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    h1 {
+      color: #ffd700;
+      text-align: center;
+      font-size: 36px;
+      margin: 20px 0; /* Added top margin */
+    }
+
+    .movie-list {
+      margin-top: 20px;
+    }
+
+    .movie-item {
+      font-size: 20px;
+      margin-bottom: 25px; /* Increased margin */
+    }
+
+    .highlight {
+      color: #ffd700; /* Gold color for highlighting */
+      font-weight: bold;
+    }
+
+    .separator {
+      width: 100%;
+      height: 2px;
+      background-color: #ffd700;
+      margin: 20px 0;
+    }
+
+    .hashtag {
+      color: #3498db; /* Blue color for hashtags */
+      font-weight: bold;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .doodle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .movie-item {
+        font-size: 18px;
+      }
+
+      .separator {
+        margin: 15px 0;
+      }
+
+      .hashtag {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="template">
+    <img src="./doodles-for-movies.png" alt="Doodle" class="doodle">
+    <h1 style="margin-top: 50px; margin-bottom: 30px;">🎬 Top <span class="highlight">10</span> Movies of 2023</h1>
+
+    <div class="movie-list">
+      <div class="movie-item">#1 Mission Impossible Dead Reckoning</div>
+      <div class="movie-item">#2 Spiderman Across The Spiderverse</div>
+      <div class="movie-item">#3 Elemental</div>
+      <div class="movie-item">#4 Leave The World Behind</div>
+      <div class="movie-item">#5 Guardians Of The Galaxy Vol3</div>
+      <div class="movie-item">#6 Barbie</div>
+      <div class="movie-item">#7 Extraction 2</div>
+      <div class="movie-item">#8 John Wick Chapter 4</div>
+      <div class="movie-item">#9 Scream 6</div>
+      <div class="movie-item">#10 M3gan</div>
+    </div>
+  </div>
+
+</body>
+</html>
